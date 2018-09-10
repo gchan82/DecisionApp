@@ -1,0 +1,107 @@
+.big-button {
+    background: $push-button;
+    border: none;
+    border-bottom: 0.6rem solid invert($push-button, 20%);
+    color:black;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-top: $l-size;
+    margin-bottom: $l-size;
+    padding: 2.4rem;
+    width: 67%;
+}
+
+.big-button:disabled {
+    opacity: 0.15;
+}
+
+.button{
+    background: $push-button;
+    border: none;
+    border-bottom: 0.3rem solid invert($push-button, 20%);
+    color: black;
+    font-weight:  500;
+    padding: $s-size;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-top: $l-size;
+    margin-bottom: $l-size;
+    width: 67%;
+
+}
+
+.button--delete {
+    background: $push-button;
+    border: none;
+    border-bottom: 0.3rem solid invert($push-button, 20%);
+    color: black;
+    font-weight:  500;
+    padding: $s-size;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-top: $l-size;
+    margin-bottom: $l-size;
+    width: 67%;
+
+
+}
+
+.button--remove {
+    background: none;
+    border: none;
+    color: $red;
+    padding: 0;
+    width: 45%;
+    font-weight:  300;
+    padding: $s-size;
+    font-weight: bold;
+    font-size: $s-size;
+    margin-top: $s-size;
+    margin-bottom: $s-size;
+    text-align: right;
+
+}
+
+.button{
+    background: $push-button;
+    border: none;
+    border-bottom: 0.3rem solid invert($push-button, 20%);
+    color: black;
+    font-weight:  500;
+    padding: $s-size;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-top: $l-size;
+    margin-bottom: $l-size;
+    width: 67%;
+
+}
+
+.button--add{
+    background: $push-button;
+    border: none;
+    border-bottom: 0.4rem solid invert($push-button, 20%);
+    color: black;
+    padding: $m-size;
+    font-weight: bold;
+    font-size: $m-size;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 25%;
+
+}
+
+.button--modal{
+    background: none;
+    border: none;
+    color: $red;
+    padding: 0;
+    width: 45%;
+    font-weight:  300;
+    padding: $s-size;
+    font-weight: bold;
+    font-size: $s-size;
+    margin-top: $s-size;
+    margin-bottom: $s-size;
+    justify-content: space-around;
+}

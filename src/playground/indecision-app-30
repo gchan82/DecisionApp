@@ -1,0 +1,101 @@
+class IndecisionApp extends React.Component {
+  render() {
+    const title = "Indecision";
+    const subtitle = "Put Your life in the hands of a computer";
+    const options = ["Thing one", "thing two", "thing three"];
+
+    return (
+      <div>
+        <Header title={title} subtitle={subtitle} />
+        <Action />
+        <Options options={options} />
+        <AddOption options={options} />
+      </div>
+    );
+  }
+}
+
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>{this.props.title}</h1>
+        <h2> {this.props.subtitle} </h2>
+      </div>
+    );
+  }
+}
+
+class Action extends React.Component {
+  handlePick() {
+    alert("handlePick");
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello, Human!</h1>
+        <button onClick={this.handlePick}>What should I do?</button>
+      </div>
+    );
+  }
+}
+
+//Add Remove All button
+//Setup handleRemoveAll -> alert some message
+//setup onClick to fire method
+
+class Options extends React.Component {
+  constructor(props) {
+    super(props);
+    this.clear = this.clear.bind(this);
+  }
+  clear() {
+    console.log(this.props.options);
+    // alert ('cleared all');
+  }
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.clear}>Clear</button>
+        {this.props.options.map(option => (
+          <Option key={option} optionText={option} />
+        ))}
+
+        <Option />
+      </div>
+    );
+  }
+}
+
+// Option - option component here
+class Option extends React.Component {
+  render() {
+    return <div> {this.props.optionText} </div>;
+  }
+}
+
+// AddOption -> AddOption component here
+class AddOption extends React.Component {
+  handleAddOption(e) {
+    e.preventDefault();
+
+    const option = e.target.elements.option.value.trim();
+
+    if (option) {
+      alert(option);
+    }
+  }
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.addOption}>
+          <input type="text" name="option" />
+          <button>Add</button>
+        </form>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));

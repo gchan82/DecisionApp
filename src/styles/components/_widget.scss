@@ -1,0 +1,11 @@
+//widget header
+.widget-header {
+    background: $off-yellow; 
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    font-size: $l-size;
+    padding: $m-size;
+    margin-bottom: $s-size;
+}
