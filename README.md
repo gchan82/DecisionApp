@@ -7,7 +7,7 @@ Delete tasks.
 Let computer tell you what to do.
 As simple as that :)
 
-Notes below to make sure you have all the libraries:
+Notes below to make sure you have all the libraries: (download this file, and open in text editor for line-by-line)
 
 index.html: placed in body -
 <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
