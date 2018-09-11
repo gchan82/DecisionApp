@@ -4,7 +4,7 @@ simple CRUD, note-taking app using React
 
 Add tasks.
 Delete tasks.
-Let computer tell you task to do.
+Let computer tell you what to do.
 As simple as that :)
 
 Notes below to make sure you have all the libraries:
