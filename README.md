@@ -8,6 +8,7 @@ Let computer tell you what to do.
 As simple as that :)
 
 Notes below to make sure you have all the libraries:
+
 index.html: placed in body -
 <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
